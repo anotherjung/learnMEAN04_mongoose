@@ -35,7 +35,12 @@ app.get('/', function(req, res) {
  //console.log("#1 req.bod",req.body);
  //console.log("#1 res.body", res.body)
  //#4 
- res.render('index');
+ User.find({}, function(err, users) {
+ 	console.log("get find", users)
+ 	//return a key-value pair
+ 	 res.render('index', {users:users});
+ })
+
 
 
 
