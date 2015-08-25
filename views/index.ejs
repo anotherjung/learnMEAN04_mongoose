@@ -6,7 +6,6 @@
   <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/materialize.js"></script>
  
-
 <div class="container">
   <div class="col s12">
 <h1 class="center-align">yo what's your name & color?</h1>
@@ -23,25 +22,20 @@
       </li>
     </ul>
   </form>
+</div>
 
 </div>
 
-<div>
-
-      <table>
+<div class="container">
+<div class="col s12">
+<table class="center-align">
 <% for (var x in users) { %>
-
-
-  
-        <tr><td><%= users[x].name %></td>
-    <td><%= users[x].color %></td></tr>
-
+<tr><td><%= users[x].name %></td>
+<td><%= users[x].color %></td></tr>
 <% } %>
 </table>
-
-
 </div>
-
+</div>
 
 </body>
 </html>
