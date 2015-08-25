@@ -1,0 +1,5 @@
+//start adding db
+//require mongoose and create the mongoose variable
+var mongoose = require('mongoose');
+//this is how we connect to the mongodb database using mongoose --"basic_mongoose" is the name of our db in mongodb -- this shoudl match the name of the db you are going  to use ofr your project. 
+mongoose.connect('mongodb://localhost/basic_mongoose');
